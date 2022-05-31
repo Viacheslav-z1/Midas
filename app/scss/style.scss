@@ -6,11 +6,11 @@
 
 
 .warn {
-  border-radius: 48px 48px 0px 0px;
   background-color: $bg;
+  padding: 0 30px;
   transition: all .5s;
   text-align: center;
-  height: 32px;
+  min-height: 32px;
   position: relative;
   &::after {
     content: '';
@@ -25,7 +25,7 @@
     height: 1px;
   }
   &__box {
-    height: 32px;
+    min-height: 32px;
     max-width: 1200px;
     padding: 0 10px;
     margin: 0 auto;
@@ -54,6 +54,8 @@
       content: '|';
       position: absolute;
       left: -12px;
+      top: 50%;
+      transform: translateY(-50%);
       font-size: 13px;
       line-height: 18px;
       color: #fff;
@@ -133,6 +135,12 @@
     padding: 32px;
     max-width: 380px;
     text-align: center;
+    transition: all .5s;
+    &:hover{
+      .page__item-link{
+        opacity: 1;
+      }
+    }
   }
   &__img-box{
     max-width: 380px;
@@ -157,6 +165,7 @@
     color: #fff;
     opacity: 0.36;
     display: block;
+    transition: all .5s;
   }
   &__item-info{
     @extend %inter-700;
@@ -185,4 +194,83 @@
   }
 }
 
+
+.token{
+  padding: 120px 0;
+  border-radius: 48px;
+  background-color: $bg;
+  background-image: url('../images/icons/ellipse.svg');
+  background-size: auto;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  &__title{
+    font-size: 130px;
+    line-height: 120px;
+    @extend %inter-700;
+    text-align: center;
+    margin-bottom: 108px;
+  }
+  &__big-wrapper{
+    background-image: url('../images/icons/shadow.png');
+    background-position: bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    margin-bottom: 100px;
+  }
+  &__item{
+    text-align: center;
+  }
+  &__num{
+    @extend %inter-700;
+    color: #fff;
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 15px;
+    &--big{
+      font-size: 80px;
+      line-height: 80px;
+    }
+  }
+  &__descr{
+    @extend %inter-500;
+    font-size: 24px;
+    line-height: 24px;
+    opacity: 0.36;
+  }
+  &__item-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+  }
+  &__box{
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 40px 64px -30px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 32px;
+    backdrop-filter: blur(16px);
+    border-radius: 32px;
+    flex-basis: 480px;
+  }
+  &__img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 55px;
+  }
+  &__name{
+    font-size: 32px;
+    line-height: 32px;
+    color: #fff;
+  }
+}
 @import 'media';
