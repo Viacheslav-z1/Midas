@@ -10,13 +10,17 @@
 }
 
 .warn {
+  padding: 5px 0;
   background-color: $bg;
-  padding: 0 30px;
   transition: all .5s;
   text-align: center;
   min-height: 32px;
   position: relative;
-
+  &__close-box{
+    max-width: 16px;
+    width: 100%;
+    margin-left: 10px;
+  }
   &::after {
     content: '';
     position: absolute;
@@ -43,9 +47,9 @@
   &__text {
     font-size: 13px;
     line-height: 18px;
-    color: #fff;
-    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.56);
     margin-right: 15px;
+    margin-right: auto;
     margin-left: auto;
   }
 
@@ -56,6 +60,7 @@
     opacity: 0.8;
     padding-left: 13px;
     position: relative;
+    margin-left: 10px;
 
     &::before {
       content: '|';
@@ -72,7 +77,11 @@
   }
 
   &__close {
-    margin-left: 235px;
+    display: block;
+    img{
+      width: 16px;
+      height: 16px;
+    }
   }
 
   &.none {
@@ -87,7 +96,7 @@
   &__inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 
   &__solamon {
@@ -99,8 +108,10 @@
 }
 
 .menu {
-  margin-right: auto;
-
+  // margin-right: auto;
+  &__btn{
+    display: none;
+  }
   &__list {
     display: flex;
   }
@@ -157,6 +168,9 @@
     max-width: 380px;
     text-align: center;
     transition: all .5s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
     &:hover {
       .page__item-link {
@@ -191,6 +205,7 @@
     opacity: 0.36;
     display: block;
     transition: all .5s;
+    margin-top: auto;
   }
 
   &__item-info {
@@ -295,7 +310,6 @@
     box-shadow: 0px 40px 64px -30px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.08);
     padding: 32px;
-    backdrop-filter: blur(16px);
     border-radius: 32px;
     flex-basis: 480px;
     transition: all .5s;
@@ -611,7 +625,7 @@
   }
 
   &__item {
-    flex-basis: 580px;
+    max-width: 580px;
     text-align: center;
   }
 
@@ -654,7 +668,8 @@
   }
 
   &__content {
-    flex-basis: 580px;
+    max-width: 580px;
+    width: 100%;
   }
 
   &__step {
@@ -676,6 +691,9 @@
     letter-spacing: -0.06em;
     margin-bottom: 24px;
   }
+  &__btn-block{
+    display: none !important;
+  }
 
   &__descr {
     font-size: 16px;
@@ -693,6 +711,10 @@
     opacity: 0.36;
   }
 
+  &__img-box{
+    max-width: 580px;
+    width: 100%;
+  }
   &__btn {
     padding: 24px 48px;
     color: #0A0C0F;
@@ -815,7 +837,8 @@
   
   &__img-box{
     background: #22252A;
-    width: 48px;
+    max-width: 48px;
+    width: 100%;
     height: 48px;
     border-radius: 50%;
     display: flex;

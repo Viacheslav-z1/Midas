@@ -14,14 +14,16 @@
   <div class="warn">
     <div class="warn__box">
       <p class="warn__text">
-        Delisting announcement. 12 DeFi and Masternode assets will be delisted. Withdraw by March 31.
+        Delisting announcement. 12 DeFi and Masternode assets will be delisted. Withdraw by March 31.<a
+          class="warn__link" href="#">
+          Read more
+        </a>
       </p>
-      <a class="warn__link" href="#">
-        Read more
-      </a>
-      <a class="warn__close" href="#">
-        <img class="warn__close-img" src="images/icons/close.svg" alt="close">
-      </a>
+      <div class="warn__close-box">
+        <a class="warn__close" href="#">
+          <img class="warn__close-img" src="images/icons/close.svg" alt="close">
+        </a>
+      </div>
     </div>
   </div>
 
@@ -33,6 +35,11 @@
             <img class="header__img" src="images/logo/logo.svg" alt="logo">
           </a>
           <nav class="menu">
+            <button class="menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
             <ul class="menu__list">
               <li class="menu__item">
                 <a class="menu__link" href="#">
@@ -54,11 +61,13 @@
                   Resources
                 </a>
               </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#">
+                  Aurielien Solamon
+                </a>
+              </li>
             </ul>
           </nav>
-          <a class="header__solamon" href="#">
-            Aurielien Solamon
-          </a>
         </div>
       </div>
     </div>
@@ -220,63 +229,64 @@
           <h2 class="utility__title">
             Midas token utility
           </h2>
-          <div class="utility__box">
-            <div class="utility__content">
-              <h3 class="utility__inner-name">
-                Payout Split
-              </h3>
-              <p class="utility__descr">
-                10% of rewards earned by Midas platform community is used to <span>buyback MIDAS token</span> from the
-                open market
-              </p>
+          <div class="utility__boxs">
+            <div class="utility__box">
+              <div class="utility__content">
+                <h3 class="utility__inner-name">
+                  Payout Split
+                </h3>
+                <p class="utility__descr">
+                  10% of rewards earned by Midas platform community is used to <span>buyback MIDAS token</span> from the
+                  open market
+                </p>
+              </div>
+              <div class="utility__img utility__img-ul">
+                <ul class="utility__list">
+                  <li class="utility__li">
+                    Feb
+                  </li>
+                  <li class="utility__li">
+                    Mar
+                  </li>
+                  <li class="utility__li">
+                    Apr
+                  </li>
+                  <li class="utility__li">
+                    Jun
+                  </li>
+                  <li class="utility__li">
+                    Jul
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="utility__img utility__img-ul">
-              <!-- <img class="utility__img" src="images/utility/1.svg" alt="utility"> -->
-              <ul class="utility__list">
-                <li class="utility__li">
-                  Feb
-                </li>
-                <li class="utility__li">
-                  Mar
-                </li>
-                <li class="utility__li">
-                  Apr
-                </li>
-                <li class="utility__li">
-                  Jun
-                </li>
-                <li class="utility__li">
-                  Jul
-                </li>
-              </ul>
+            <div class="utility__box utility__box-rev">
+              <div class="utility__img-box">
+                <img class="utility__img" src="images/utility/2.svg" alt="utility">
+              </div>
+              <div class="utility__content">
+                <h3 class="utility__inner-name">
+                  Payout Split
+                </h3>
+                <p class="utility__descr">
+                  10% of rewards earned by Midas platform community is used to <span>buyback MIDAS token</span> from the
+                  open market
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="utility__box">
-            <div class="utility__img-box">
-              <img class="utility__img" src="images/utility/2.svg" alt="utility">
-            </div>
-            <div class="utility__content">
-              <h3 class="utility__inner-name">
-                Payout Split
-              </h3>
-              <p class="utility__descr">
-                10% of rewards earned by Midas platform community is used to <span>buyback MIDAS token</span> from the
-                open market
-              </p>
-            </div>
-          </div>
-          <div class="utility__box">
-            <div class="utility__content">
-              <h3 class="utility__inner-name">
-                Payout Split
-              </h3>
-              <p class="utility__descr">
-                10% of rewards earned by Midas platform community is used to <span>buyback MIDAS token</span> from the
-                open market
-              </p>
-            </div>
-            <div class="utility__img-box">
-              <img class="utility__img" src="images/utility/3.png" alt="utility">
+            <div class="utility__box">
+              <div class="utility__content">
+                <h3 class="utility__inner-name">
+                  Payout Split
+                </h3>
+                <p class="utility__descr">
+                  10% of rewards earned by Midas platform community is used to <span>buyback MIDAS token</span> from the
+                  open market
+                </p>
+              </div>
+              <div class="utility__img-box">
+                <img class="utility__img" src="images/utility/3.png" alt="utility">
+              </div>
             </div>
           </div>
           <div class="utility__btn-box">
@@ -286,6 +296,7 @@
           </div>
         </div>
       </section>
+
       <section class="support">
         <div class="container">
           <h2 class="support__title">
@@ -313,6 +324,7 @@
           </div>
         </div>
       </section>
+
       <section class="how">
         <div class="container">
           <div class="how__title">
@@ -364,16 +376,20 @@
               <p class="how__text">
                 Swap your crypto to MIDAS token and start earning 30% APY
               </p>
-              <a class="how__btn" href="#">
+              <a class="how__btn how__btn-none" href="#">
                 Go to platform ->
               </a>
             </div>
             <div class="how__img-box">
               <img class="how__img" src="images/how/3.svg" alt="how">
+                <a class="how__btn how__btn-block" href="#">
+                  Go to platform ->
+                </a>
             </div>
           </div>
         </div>
       </section>
+      
       <section class="question">
         <div class="container">
           <h2 class="question__title">
@@ -536,7 +552,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> 
     </div>
     <div class="footer">
       <div class="container">
