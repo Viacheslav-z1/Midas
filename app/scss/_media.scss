@@ -1,0 +1,737 @@
+@media(max-width: 1100px) {
+  .warn {
+    &__close {
+      margin-left: auto;
+    }
+
+    &__link-box {
+      margin-right: 20px;
+    }
+  }
+
+  .support {
+    &__title {
+      font-size: 110px;
+      line-height: 110px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .how {
+    &__title {
+      font-size: 110px;
+      line-height: 110px;
+      margin-bottom: 40px;
+    }
+  }
+  .question{
+    &__title{
+      font-size: 110px;
+      line-height: 110px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .utility {
+    &__title {
+      font-size: 110px;
+      line-height: 110px;
+      margin-bottom: 40px;
+    }
+
+    &__list {
+      gap: 10px;
+    }
+
+    &__li {
+      height: 200px;
+      width: 70px;
+      border-radius: 15px;
+    }
+
+    &__img-ul {
+      min-height: 310px;
+    }
+
+    &__inner-name {
+      font-size: 70px;
+      line-height: 70px;
+      margin-bottom: 20px;
+    }
+
+    &__descr {
+      font-size: 30px;
+      line-height: 35px;
+    }
+  }
+}
+
+@media(max-width: 968px) {
+
+  .page,
+  .token,
+  .stake,
+  .utility,
+  .support,
+  .how,
+  .question{
+    padding: 40px 0;
+    border-radius: 20px;
+  }
+    .question{
+      border-radius: 20px 20px 0 0;
+    }
+  .page {
+    border-radius: 0 0 20px 20px;
+
+    &__item {
+      padding: 15px;
+    }
+
+    &__item-text {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    &__text {
+      margin-bottom: 60px;
+    }
+  }
+
+  .token {
+    background-position: center 450px;
+    background-size: 80%;
+
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 40px;
+    }
+
+    &__inner {
+      margin-bottom: 30px;
+    }
+
+    &__num {
+      font-size: 44px;
+      line-height: 44px;
+    }
+
+    &__descr {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .stake {
+    border-radius: 20px;
+
+    &__title {
+      font-size: 60px;
+      line-height: 65px;
+    }
+
+    &__name {
+      font-size: 60px;
+      line-height: 65px;
+      padding: 12px 24px;
+      margin-bottom: 40px;
+    }
+
+    &__descr {
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__inner {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    &__over {
+      transform: rotate(0deg);
+      writing-mode: horizontal-tb;
+      font-size: 100px;
+    }
+
+    &__item-name {
+      font-size: 70px;
+      line-height: 72px;
+      margin-bottom: 8px;
+    }
+
+    &__item-descr {
+      font-size: 30px;
+    }
+
+    .stake__item+.stake__item {
+      margin-top: 32px;
+    }
+  }
+
+  .utility {
+    border-radius: 20px;
+
+    &__box {
+      flex-direction: column-reverse;
+    }
+
+    &__box-rev {
+      flex-direction: column;
+    }
+
+    &__img {
+      height: 300px;
+    }
+
+    &__title {
+      font-size: 60px;
+      line-height: 65px;
+    }
+
+    &__inner-name {
+      font-size: 40px;
+      line-height: 42px;
+    }
+
+    &__descr {
+      font-size: 26px;
+      line-height: 30px;
+    }
+  }
+
+  .support {
+    &__list {
+      flex-direction: column;
+      align-items: center;
+      gap: 100px;
+      background-image: url('../images/icons/ellipse_rotate.png');
+      background-position: center -50px;
+      background-size: auto;
+      padding: 40px 0 !important;
+    }
+
+    &__box {
+      background-image: url('../images/icons/ellipse2_rotate.png');
+      background-position: center 200px;
+      background-size: auto;
+    }
+  }
+
+  .how {
+    &__name {
+      font-size: 65px;
+      line-height: 65px;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__btn {
+      margin-top: 30px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+  .question{
+    &__title{
+      font-size: 90px;
+      line-height: 100px;
+    }
+    &__descr{
+      font-size: 30px;
+      line-height: 34px;
+    }
+    &__name{
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+}
+
+
+
+
+
+@media(max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .warn {
+    &__link {
+      opacity: 1;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .header {
+    &__inner {
+      justify-content: space-between;
+    }
+
+    &__logo {
+      position: relative;
+      z-index: 999;
+    }
+  }
+
+  .menu {
+
+    &__list {
+      overflow: auto;
+      flex-direction: column;
+      text-align: center;
+      background-color: hwb(0deg 0% 100% / 90%);
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 900;
+      top: 0px;
+      bottom: 0;
+      height: 100%;
+      padding-top: 130px !important;
+      transform: translateX(-400%);
+      transition: all .5s;
+
+      &.active {
+        transform: translateX(0);
+      }
+    }
+
+    &__item {
+      margin-bottom: 15px;
+    }
+
+    &__link {
+      display: inline-block;
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      width: 24px;
+      height: 20px;
+      padding: 6px 3px;
+      position: relative;
+      z-index: 999;
+
+      span {
+        position: absolute;
+        // width: 18px;
+        height: 2px;
+        background-color: #fff;
+        left: 0;
+        right: 0;
+        top: 0;
+
+        &:nth-child(2) {
+          top: 50%;
+        }
+
+        &:nth-child(3) {
+          top: 100%;
+        }
+      }
+    }
+  }
+
+  .page {
+    border-radius: 0 0 20px 20px;
+
+    &__inner {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &__item {
+      max-width: 100%;
+    }
+
+    &__img-box {
+      margin: 0 auto;
+    }
+
+    &__text {
+      font-size: 50px;
+      line-height: 50px;
+    }
+  }
+
+  .token {
+    border-radius: 20px;
+    background-position: center 460px;
+
+    &__item-box {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &__inner {
+      gap: 32px;
+    }
+
+    &__box {
+      padding: 24px;
+    }
+
+    &__img {
+      margin-bottom: 20px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &__name {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    &__wrapper {
+      gap: 8px;
+    }
+
+    &__big-wrapper {
+      background-position: center;
+      background-size: 1200px;
+    }
+
+    &__num {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  .stake {
+    background-position: center;
+
+    &__title {
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    &__name {
+      font-size: 32px;
+      line-height: 45px;
+      margin-bottom: 25px;
+      letter-spacing: -0.048em;
+    }
+
+    &__descr {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 48px;
+    }
+
+    &__ober {
+      font-size: 64px;
+      line-height: 64px;
+    }
+
+    &__inner {
+      gap: 32px;
+    }
+
+    &__item-name {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 2px;
+    }
+
+    &__item {
+      padding-left: 74px;
+
+      &:nth-child(1) {
+        &::before {
+          width: 58px;
+          height: 58px;
+        }
+      }
+
+      &:nth-child(2) {
+        &::before {
+          width: 58px;
+          height: 58px;
+        }
+      }
+
+      &:nth-child(3) {
+        &::before {
+          width: 58px;
+          height: 58px;
+        }
+      }
+
+    }
+
+    &__over {
+      font-size: 64px;
+      line-height: 64px;
+    }
+
+    &__item-descr {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .support {
+    background-size: 800px;
+
+    &__title {
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    &__num {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    &__descr {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__list {
+      background-position: center -100px;
+    }
+
+    &__box {
+      background-position: center 150px;
+    }
+  }
+
+  .how {
+    &__item {
+      flex-direction: column;
+      &+& {
+        margin-top: 44px;
+      }
+    }
+
+    &__btn-none {
+      display: none;
+    }
+
+    &__btn-block {
+      display: block !important;
+      text-align: center;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 20px;
+    }
+
+    &__step {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 20px;
+    }
+
+    &__name {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 12px;
+    }
+
+    &__descr {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 12px;
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  .question{
+    &__title{
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 24px;
+    }
+    &__descr{
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 32px;
+    }
+    &__soc{
+      flex-direction: column;
+      margin-bottom: 40px;
+      gap: 15px;
+    }
+    &__name{
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  .footer{
+    display: none;
+  }
+}
+
+@media(max-width: 500px) {
+  .stake {
+    &__descr {
+      margin-bottom: 32px;
+    }
+  }
+
+  .utility {
+    &__title {
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    &__inner-name {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    &__descr {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__img {
+      height: 200px;
+    }
+
+    &__img-ul {
+      padding-top: 50px;
+      min-height: 180px;
+    }
+
+    &__li {
+      width: 34px;
+      height: 100px;
+      font-size: 8px;
+      line-height: 8px;
+      border-radius: 8px;
+    }
+
+    &__btn {
+      font-size: 16px;
+      line-height: 24px;
+      display: inline-block;
+      width: 100%;
+      padding: 12px;
+    }
+  }
+
+  .how {
+    &__item {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 12px;
+    }
+
+    &__step {
+      font-size: 15px;
+      line-height: 15px;
+      margin-bottom: 20px;
+    }
+
+    &__name {
+      font-size: 34px;
+      line-height: 34px;
+      margin-bottom: 12px;
+    }
+
+    &__descr {
+      font-size: 15px;
+      line-height: 17px;
+      margin-bottom: 12px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .question{
+    &__name{
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__box{
+      padding: 16px;
+    }
+    &__description{
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__content-text{
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__img-box{
+      max-width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+@media(max-width: 350px) {
+  .how {
+    &__item {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 12px;
+    }
+
+    &__step {
+      font-size: 12px;
+      line-height: 12px;
+      margin-bottom: 20px;
+    }
+
+    &__name {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 12px;
+    }
+
+    &__descr {
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 12px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
