@@ -1,4 +1,3 @@
-// const { active } = require("browser-sync");
 
 $(function () {
   $('.warn__close').on('click',function (e) {
